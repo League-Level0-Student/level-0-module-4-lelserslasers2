@@ -15,17 +15,17 @@ public class ChangeCalculator {
 	public static void main(String[] args) {
 
 		// Ask the user how many nickels they have
-
+		int nickels = Integer.parseInt(JOptionPane.showInputDialog("How many nickels do you have?"));
 		// Convert their answer to an int using Integer.parseInt()
 
 		// Ask the user how many dimes they have, and convert their answer
-
+		int dimes = Integer.parseInt(JOptionPane.showInputDialog("How many dimes do you have?"));
 		// Ask the user how many quarters they have, and convert their answer
-
+		int quarters = Integer.parseInt(JOptionPane.showInputDialog("How many quarters do you have?"));
 		// Calculate how much money the user has and save it in a double variable 
-
+		double money = 0.05*nickels + 0.1*dimes + 0.25*quarters;
 		// Tell the user how much money they have
-
+		JOptionPane.showMessageDialog(null, "You have " + money + " dollars!");
 	}
 }
 

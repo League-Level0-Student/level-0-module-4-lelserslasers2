@@ -16,9 +16,19 @@ public class SleepyHead {
         
         /*
          * Ask the user for these values using a confirm dialog like the one below
-         * JOptionPane.showConfirmDialog(null, "Is it a weekday?", "Sleepy Head", JOptionPane.YES_NO_OPTION);
+          * JOptionPane.showConfirmDialog(null, "Is it a weekday?", "Sleepy Head", JOptionPane.YES_NO_OPTION);
+          * 
+          * 
+          
          */
-    
+        int y = JOptionPane.showConfirmDialog(null, "Is it a vacation", "Sleepy Head", JOptionPane.YES_NO_OPTION);
+        int x = JOptionPane.showConfirmDialog(null, "Is it a weekday?", "Sleepy Head", JOptionPane.YES_NO_OPTION);
+        if (y == 0 || x == 1) {
+        	System.out.println("sleep in");
+        }
+        else {
+        	System.out.println("get up lazybones");
+        }
 
 
         /*
